@@ -2,9 +2,9 @@ namespace Day_02_Hewani;
 
 public class Animal
 {
-	public string name {get; set;}
+	public string name;
 	
-	public int age {get; set;}
+	public int age;
 	
 	public Animal(string name, int age)
 	{

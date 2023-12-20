@@ -2,7 +2,10 @@ namespace Day_02_Hewani;
 
 public class Bird : Animal
 {
-	public void Chirp()
+	public Bird(string name, int age) : base(name, age){
+
+	}
+	public void Chirp() 
 	{
 		Console.WriteLine("Kukuruyuk");
 	}
