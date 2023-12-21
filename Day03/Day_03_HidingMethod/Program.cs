@@ -19,8 +19,13 @@ class Program
 {
 	static void Main()
 	{
+		//pada kasus ini calckid mengoverride method count
 		CalcChild calckid = new CalcChild();
+		//pada kasus ini instance calculator diambil dari child class nya hal
+		//tersebut ternyata bisa dilakukan namun output untuk methodnya tetap
+		//method dari parentnya
 		Calculator calc = calckid;
+		//sama seperti yang diatas hanya saja keyword (?) nya beda
 		Calculator calcTest = new CalcChild();
 		calckid.Count();
 		calcTest.Count();
