@@ -11,6 +11,7 @@ class Program
 		Console.WriteLine(result);
 		Console.WriteLine(result2);
 	}
+	
 	static int Add(int a, int b)
 	{
 		return a + b;
