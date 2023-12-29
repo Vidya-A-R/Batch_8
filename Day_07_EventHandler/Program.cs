@@ -5,7 +5,7 @@ class Program
 	//start
 	static void Main()
 	{
-		//membuat instance baru untuk sunscriber
+		//membuat instance baru untuk subscriber
 		
 		Subscriber sub1 = new Subscriber();
 		Subscriber sub2 = new Subscriber();

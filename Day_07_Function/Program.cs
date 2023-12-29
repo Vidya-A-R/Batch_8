@@ -29,17 +29,18 @@ class Youtuber
     {
         Name = name;
     }
-    public Action<string> mySubscriber;
+    public Func<string, string> mySubscriber;
 
     public void UploadVideo()
     {
         Console.WriteLine("Upload video");
-        SendNotification("Video Baru lur");
+        var response = SendNotification("Video Baru lur");
+        Console.WriteLine(response);
     }
 
-    public void SendNotification(string message)
+    public string SendNotification(string message)
     {
-        mySubscriber?.Invoke(Name + ": " + message);
+        return mySubscriber?.Invoke(Name + ": " + message);
     }
 }
 
@@ -50,24 +51,26 @@ class Vlogger
     {
         Name = name;
     }
-    public Action<string> mySubscriber;
+    public Func<string, string> mySubscriber;
 
     public void UploadVideo()
     {
         Console.WriteLine("Upload video nich");
-        SendNotification("Video anyar slur");
+        var response = SendNotification("Video anyar slur");
+        Console.WriteLine(response);
     }
 
-    public void SendNotification(string message)
+    public string SendNotification(string message)
     {
-        mySubscriber?.Invoke(Name + ": " + message);
+        return mySubscriber?.Invoke(Name + ": " + message);
     }
 }
 
 class Subscriber
 {
-    public void GetNotification(string message)
+    public string GetNotification(string message)
     {
-        Console.WriteLine("Notification: " + message);
+        //Console.WriteLine("Received Notification: " + message);
+        return "Received Notification: " + message;
     }
 }
