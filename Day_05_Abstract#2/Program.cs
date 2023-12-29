@@ -1,40 +1,40 @@
-﻿class MiconChecker
+﻿using System;
+
+class MiconChecker
 {
-	public void CheckMicon(Micon micon)
-	{
-		Console.WriteLine(micon.Name());
-	}	
-	
+    public void CheckMicon(Micon micon)
+    {
+        Console.WriteLine(micon.Name());
+    }   
 }
 
 abstract class Micon
 {
-	public abstract string Micon();
+    public abstract string Name();
 }
 
 class Arduino : Micon
 {
-	public override string Micon()
-	{
-		return "Arduino Mega";
-	}	
+    public override string Name()
+    {
+        return "Arduino Mega";
+    }   
 }
 
 class ESP32 : Micon
 {
-	public override string Micon
-	{
-		return "ESP32 Nano";
-	}
+    public override string Name()
+    {
+        return "ESP32 Nano";
+    }
 }
 
 class Program
 {
-	static void Main()
-	{
-		MiconChecker micon = new();
-		micon.Miconchecker(new Arduino());
-	}
-	
+    static void Main()
+    {
+        MiconChecker checker = new MiconChecker();
+        checker.CheckMicon(new Arduino());
+        checker.CheckMicon(new ESP32()); // Jika Anda ingin mengecek ESP32 juga
+    }
 }
-
