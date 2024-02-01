@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLITE_TUTOR", "SQLITE_TUTO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLITE_CODEFIRST", "SQLITE_CODEFIRST\SQLITE_CODEFIRST.csproj", "{47EB7D6E-DABB-478B-A29E-BA897E8999A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{783F0432-5BCA-40D1-918E-6116A9FB2AF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -359,6 +361,10 @@ Global
 		{47EB7D6E-DABB-478B-A29E-BA897E8999A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47EB7D6E-DABB-478B-A29E-BA897E8999A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47EB7D6E-DABB-478B-A29E-BA897E8999A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783F0432-5BCA-40D1-918E-6116A9FB2AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783F0432-5BCA-40D1-918E-6116A9FB2AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783F0432-5BCA-40D1-918E-6116A9FB2AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783F0432-5BCA-40D1-918E-6116A9FB2AF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
